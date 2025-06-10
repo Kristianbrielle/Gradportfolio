@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KakakangBrayl</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #0a0a12;
+    }
+
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #0a0a12;
+    }
+
+    header h1 span {
+      color: #FFA500;
+    }
+
+    nav a {
+      color: #0a0a12;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 300;
+    }
+
+    nav a:hover {
+      color: #FFA500;
+    }
+
+    .certificates-section {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 2rem;
+    }
+
+    .certificates-section h2 {
+      color: #FFA500;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .certificates {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .certificate {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(236, 135, 3, 0.966);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .certificate:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(230, 133, 6, 0.89);
+    }
+
+    .certificate img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .certificate .info {
+      padding: 1rem;
+    }
+
+    .certificate .info h3 {
+      margin-bottom: 0.5rem;
+      color: #FFA500;
+    }
+
+    .certificate .info p {
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kakang<span>Brielle.</span></h1>
+    <nav>
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="certificates.html">CERTIFICATES</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="certificates-section">
+    <h2>My Certificates</h2>
+    <div class="certificates">
+      <div class="certificate">
+        <img src="img/capwritting1.png" alt="Certificate 1">
+        <div class="info">
+          <h3>Capstone Writting 1</h3>
+        </div>
+      </div>
+      <div class="certificate">
+        <img src="img/certs1.png" alt="Certificate 2">
+        <div class="info">
+          <h3>Introduction to CyberSecurity</h3>
+        </div>
+      </div>
+      <div class="certificate">
+        <img src="img/certs2.png" alt="Certificate 3">
+        <div class="info">
+          <h3>PROJECT WORK</h3>
+        </div>
+      </div>
+      <div class="certificate">
+        <img src="img/mcits2023.jpg" alt="Certificate 4">
+        <div class="info">
+          <h3>MCITS2023</h3>
+        </div>
+      </div>
+      <div class="certificate">
+        <img src="img/mcits2024.jpg" alt="Certificate 5">
+        <div class="info">
+          <h3>MCITS2024</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

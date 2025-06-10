@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KakangBrayl</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #0a0a12;
+    }
+
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #0a0a12;
+    }
+
+    header h1 span {
+      color: #FFA500;
+    }
+
+    nav a {
+      color: #0a0a12;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 300;
+    }
+
+    nav a:hover {
+      color: #FFA500;
+    }
+
+    .portfolio-section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+    }
+
+    .portfolio-section h2 {
+      color: #FFA500;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(230, 169, 57, 0.973);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(245, 169, 5, 0.719);
+    }
+
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project .info {
+      padding: 1rem;
+    }
+
+    .project .info h3 {
+      margin-bottom: 0.5rem;
+      color: #FFA500;
+    }
+
+    .project .info p {
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kakang<span>Brielle.</span></h1>
+    <nav>
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="certificates.html">CERTIFICATES</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="portfolio-section">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="img/skinscan.png" alt="Project 1">
+        <div class="info">
+          <h3>SkinScan</h3>
+          <p>Identifying Common Skin Problems in Young Children</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/pansitsabilao.png" alt="Project 2">
+        <div class="info">
+          <h3>Pansit Sa Bilao POS System</h3>
+          <p>A POS system made for a fastfood chain near San Pedro, Davao City.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/leadmastery.png" alt="Project 3">
+        <div class="info">
+          <h3>Lead Mastery</h3>
+          <p>A Website I create for a company named LeadMastery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

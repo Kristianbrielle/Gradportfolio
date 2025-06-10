@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KakangBrayl</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #0c0c1b;
+    }
+
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #0c0c1b;
+    }
+
+    header h1 span {
+      color: #FFA500;
+    }
+
+    nav a {
+      color: #0c0c1b;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 300;
+    }
+
+    nav a:hover {
+      color: #FFA500;
+    }
+
+    .main-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5rem 10%;
+    }
+
+    .main-text {
+      max-width: 600px;
+    }
+
+    .main-text h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .main-text h1 .designer {
+      color: #FFA500;
+      animation: pop 1s infinite;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .main-text p {
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+
+    .social-icons a {
+      margin-right: 1rem;
+      color: #0c0c1b;
+      font-size: 1.5rem;
+      transition: transform 0.3s, color 0.3s;
+      border: 2px solid #FFA500;
+      border-radius: 50%;
+      padding: 0.5rem;
+    }
+
+    .social-icons a:hover {
+      color: #FFA500;
+      transform: scale(1.2);
+    }
+
+    .profile-pic {
+      border: 4px solid #FFA500;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kakang<span>Brielle.</span></h1>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="certificates.html">CERTIFICATES</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="main-section" id="home">
+    <div class="main-text">
+      <h1>Hello I'm a <span class="designer">Graphic Designer</span></h1>
+      <p>Hi I'm Brielle! I am a 4th-year student studying at Holy Cross of Davao College .</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/statller"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/kakangbrayl/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/kristian-brielle-bisto-5b0b21312/"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="main-img">
+      <img src="img/prof photo.png" alt="Kristian Brielle" class="profile-pic">
+    </div>
+  </section>
+</body>
+</html>
